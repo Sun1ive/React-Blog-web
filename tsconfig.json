@@ -13,7 +13,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "rootDir": "./src"
   },
   "include": ["src"]
 }
