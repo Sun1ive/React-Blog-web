@@ -6,15 +6,13 @@ export type styles = {
   grow: {
     flexGrow: number;
   };
-
-  menuButton: {
-    marginLeft: number;
-    marginRight: number;
-  };
 };
+
+export type Props = {
+  classes: classes;
+}
 
 export type classes = {
   grow: string;
   root: string;
-  menuButton: string;
 };
