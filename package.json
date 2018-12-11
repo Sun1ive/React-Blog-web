@@ -5,11 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.1",
-    "@types/jest": "23.3.10",
-    "@types/node": "10.12.12",
-    "@types/react": "16.7.13",
-    "@types/react-dom": "16.0.11",
-    "prop-types": "^15.6.2",
+    "classnames": "^2.2.6",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
@@ -32,7 +28,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/prop-types": "^15.5.7",
+    "@types/jest": "23.3.10",
+    "@types/node": "10.12.12",
+    "@types/react": "16.7.13",
+    "@types/react-dom": "16.0.11",
+    "@types/classnames": "^2.2.6",
     "@types/react-router-dom": "^4.3.1"
   }
 }
