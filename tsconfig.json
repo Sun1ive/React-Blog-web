@@ -13,13 +13,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": "./",
     "alwaysStrict": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "strictNullChecks": true
   },
   "include": ["src"]
 }
