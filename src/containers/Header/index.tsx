@@ -1,31 +1,22 @@
 import * as React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import * as T from './index.d';
+import { NavLink } from 'react-router-dom';
+import './index.css';
 
-const styles: T.styles = {
-  root: {
-    flexGrow: 1
-  },
-  grow: {
-    flexGrow: 1
-  }
-};
-
-const Header: React.FunctionComponent<T.Props> = ({ classes }) => {
+export const Header: React.FunctionComponent<{}> = () => {
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" className={classes.grow}>
-            Todo app
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <header className="header">
+      <nav>
+        <ul className="nav">
+          <li className="nav-item">
+            <NavLink exact to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/signin">SignIn</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
-
-export default withStyles(styles)(Header);

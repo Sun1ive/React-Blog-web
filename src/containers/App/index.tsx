@@ -1,8 +1,11 @@
-import React from 'react';
-import Header from '../Header';
+import React, { Fragment } from 'react';
+import { Header } from '../Header';
+import { Footer } from '../Footer';
 
-export default () => (
-  <div>
+export const App: React.SFC<any> = ({ children }) => (
+  <Fragment>
     <Header />
-  </div>
+    {children}
+    <Footer />
+  </Fragment>
 );
